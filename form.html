@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML FORM</title>
+    </head>
+    <body>
+        <h2>Forms in HTML</h2>
+        <form action="">
+            <label for="name">Name : </label>
+                <input id="name" type="text" minlength="6" maxlength="10" required placeholder="Your Name">
+                <!-- used disabled tag in SUrname to show we can disable certain field -->
+            <label for="surname">Surname:</label>
+                <input id="surname" type="text" min="18" disabled value="disabled"> <br> <br>
+            <label for="age">Age : </label>
+                <input type="number" placeholder="your age" > <br><br>
+            <label for="email">Email : </label>
+                <input type="email"><br><br>
+            <label for="date">Date Of Joining :</label>
+                <input type="date"> <br><br>
+            <label for="password">Password : </label>
+                <input type="password"> <br><br>
+            <label for="sex">Sex : </label>
+                
+                 <input type="radio" name="sex" id="male" checked><label for="Male">Male</label>
+                 <input type="radio" name="sex"id="female" ><label for="Female">Female</label>
+
+            <br><br>
+            <label for="lang">Your preffered language </label>
+            <input type="checkbox" name="language" id="eng">
+                <label for="english">English</label>
+            <input type="checkbox" name="language" id="hin">
+                <label for="english">Hindi</label>
+            <input type="checkbox" name="language" id="mani" checked>
+                <label for="english">Manipuri</label>
+            <br><br>
+
+            <label for="color">please select the color of your skin</label>
+                <input type="color" id="color"> <br><br>
+            <label for="payment">Select Payment Mode</label>
+                <select name="pay" id="payment">
+                    <option value="Gpay">G-Pay</option>
+                    <option value="UPI">UPI</option>
+                </select>
+            <br><br>
+            <label for="feedback">Feedback</label>
+                <textarea name="feedback" id="feedback" rows="10" cols="100" placeholder="your feedback here..."> </textarea>
+
+           <input type="reset"> 
+           <input type="submit">
+        </form>
+    </body>
+</html>
